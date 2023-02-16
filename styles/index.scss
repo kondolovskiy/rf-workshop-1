@@ -12,6 +12,10 @@ h2 {
     line-height: var(--headers-line-height);
 }
 
+h3, p {
+    margin: 0;
+}
+
 .selected {
     color: var(--secondary-color);
 }
@@ -55,6 +59,19 @@ h2 {
     color: var(--primary-color);
     font-size: 18px;
     line-height: 28px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--primary-color);
+    }
+
+    &__description {
+        color: var(--gray);
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 /* Page styles */
@@ -191,7 +208,7 @@ h2 {
         flex-direction: row;
         gap: 218px;
         max-width: 1180px;
-        margin: 0 auto;
+        margin: 0 auto -40px;
 
         &__title {
             max-width: 382px;
@@ -210,6 +227,49 @@ h2 {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 28px;
+            }
+        }
+    }
+
+    .cards-answers {
+        background: url('../assets/answers-bg.png') no-repeat top -55px left, linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%);
+        border-radius: var(--section-border-radius) 0px 0px 0px;
+        padding-top: 255px;
+        padding-bottom: 200px;
+
+        &__wrapper {
+            max-width: 1180px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+        }
+
+        &__header {
+            max-width: 616px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 36px;
+            color: var(--gray);
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--primary-space);
+        }
+
+        .card {
+            padding: 24px 32px 24px 60px;
+            background: url("../assets/tick.svg") no-repeat top 24px left 20px;
+        }
+
+        &__actions {
+            .link {
+                width: 232px;
             }
         }
     }
