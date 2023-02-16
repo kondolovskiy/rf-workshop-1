@@ -4,5 +4,12 @@
   --tertiary-color: #F7F6FA;
   --quaternary-color: #FFFFFF;
   --border-radius: 8px;
-  --max-width: 1420px;
+  --max-width: 1920px;
+  --primary-space: 20px;
+  --secondary-space: 12px;
+  --headers-font-size: 52px;
+}
+
+body {
+  font: "Poppins";
 }/*# sourceMappingURL=index.css.map */
