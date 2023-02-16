@@ -3,6 +3,11 @@
     border-radius: var(--border-radius);
 }
 
+@mixin maxBlockWidth() {
+    margin: 0 auto;
+    max-width: 1420px;
+}
+
 @mixin section($url, $position) {
     background: linear-gradient(180deg, var(--main-background-color) 29.73%, var(--quaternary-color) 100%), url($url) no-repeat $position;
 }
