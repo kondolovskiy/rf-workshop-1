@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
+/* General styles */
 body {
     font-family: 'Poppins';
 }
@@ -23,6 +24,7 @@ h2 {
     }
 }
 
+/* Page styles */
 .header {
     display: flex;
     justify-content: space-between;
