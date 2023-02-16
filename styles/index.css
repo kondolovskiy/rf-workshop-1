@@ -3,24 +3,33 @@
   --secondary-color: #8053FF;
   --tertiary-color: #F7F6FA;
   --quaternary-color: #FFFFFF;
-  --fifth-color: #928CAB;
+  --gray: #928CAB;
+  --gray-light: #D4CDEF;
   --main-background-color: #FBFAFF;
   --border-radius: 8px;
   --max-width: 1920px;
   --primary-space: 20px;
   --secondary-space: 12px;
   --headers-font-size: 52px;
+  --headers-line-height: 64px;
 }
 
 body {
   font-family: "Poppins";
 }
 
+h2 {
+  font-size: var(--headers-font-size);
+  margin: 0;
+  line-height: var(--headers-line-height);
+}
+
+.selected {
+  color: var(--secondary-color);
+}
+
 .wrapper {
-  max-width: var(--max-width);
-  padding: 0 var(--secondary-space);
   margin: 0 auto;
-  max-width: 1420px;
 }
 
 .header {
@@ -78,7 +87,7 @@ body {
   margin: 0;
 }
 .hero__description {
-  color: var(--fifth-color);
+  color: var(--gray);
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
@@ -86,4 +95,49 @@ body {
 .hero__actions {
   display: flex;
   gap: var(--secondary-space);
+}
+
+.footer {
+  border-radius: 250px 0 0 0;
+  height: 900px;
+  background: url("../assets/join-bg-top.png") no-repeat top left, url("../assets/join-bg-bottom.png") no-repeat bottom right var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__title {
+  max-width: 437px;
+}
+.footer__title > h2 {
+  color: var(--quaternary-color);
+}
+.footer__description {
+  color: var(--gray-light);
+  font-size: 18px;
+  line-height: 36px;
+}
+.footer .contants .social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: flex-end;
+}
+.footer .contants .social-media > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.footer .contants .other-contacts > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.footer .contants .other-contacts > ul a {
+  color: var(--gray-light);
+  text-decoration: underline;
+}
+.footer .contants .other-contacts > ul a:hover {
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
