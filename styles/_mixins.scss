@@ -4,5 +4,5 @@
 }
 
 @mixin section($url, $position) {
-    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%), url($url) no-repeat $position;
+    background: linear-gradient(180deg, var(--main-background-color) 29.73%, var(--quaternary-color) 100%), url($url) no-repeat $position;
 }
