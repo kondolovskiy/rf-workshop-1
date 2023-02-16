@@ -1,0 +1,8 @@
+@mixin button() {
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+}
+
+@mixin section($url, $position) {
+    background: linear-gradient(180deg, #FBFAFF 29.73%, #FFFFFF 100%), url($url) no-repeat $position;
+}
