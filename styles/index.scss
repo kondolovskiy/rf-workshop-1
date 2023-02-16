@@ -115,6 +115,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 
     .link {
         width: 232px;
@@ -142,7 +143,36 @@ h2 {
 }
 
 .main {
-    height: 400px;
+    .companies-list {
+        margin-bottom: 187px;
+
+        &__title {
+            color: var(--primary-color);
+            font-size: 24px;
+            line-height: 40px;
+            font-weight: 500;
+            margin: 0 auto 42px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 480px;
+                border-bottom: 2px solid var(--header-line-color);
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            gap: var(--primary-space);
+        }
+    }
 }
 
 .footer {

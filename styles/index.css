@@ -5,6 +5,7 @@
   --quaternary-color: #FFFFFF;
   --gray: #928CAB;
   --gray-light: #D4CDEF;
+  --header-line-color: #F4F5F4;
   --main-background-color: #FBFAFF;
   --border-radius: 8px;
   --section-border-radius: 250px;
@@ -123,6 +124,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 .hero .link {
   width: 232px;
@@ -145,8 +147,31 @@ h2 {
   gap: var(--secondary-space);
 }
 
-.main {
-  height: 400px;
+.main .companies-list {
+  margin-bottom: 187px;
+}
+.main .companies-list__title {
+  color: var(--primary-color);
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+  margin: 0 auto 42px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.main .companies-list__title::before, .main .companies-list__title::after {
+  content: "";
+  display: block;
+  width: 480px;
+  border-bottom: 2px solid var(--header-line-color);
+}
+.main .companies-list__list {
+  display: flex;
+  justify-content: center;
+  gap: var(--primary-space);
 }
 
 .footer {
